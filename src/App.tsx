@@ -1,5 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Result from "./pages/Result/Result";
+
 function App() {
-  return <div>안녕하세요</div>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/result/:name" element={<Result />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

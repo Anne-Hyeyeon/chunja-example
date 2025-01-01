@@ -1,0 +1,43 @@
+.container {
+  text-align: center;
+}
+
+.englishName {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-gray-700);
+  margin-bottom: 1rem;
+}
+
+.emoji {
+  font-size: 4rem;
+  margin: 1.5rem 0;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-gray-600);
+  white-space: pre-line;
+}
+
+.errorContainer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 480px) {
+  .englishName {
+    font-size: 2rem;
+  }
+
+  .emoji {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
